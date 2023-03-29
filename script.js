@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //FETCHING THE API
-
 function getRandomCocktail(){
 	fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
   .then(function(response) {
@@ -33,7 +32,6 @@ function getRandomCocktail(){
 }
 
 //DISPLAYING THE DRINK
-
 function displayCocktail(cocktail){
 	const drinkSection = document.querySelector('#drink-section');
 	drinkSection.innerHTML = '';
@@ -46,7 +44,7 @@ function displayCocktail(cocktail){
 	drinkImg.src = cocktail.drinks[0].strDrinkThumb;
 	drinkSection.appendChild(drinkImg);
 
-	//display ingredients
+//DISPLAYING THE INGREDIENTS
 	const ingredientHeading = document.createElement('h3');
 	ingredientHeading.innerText = 'Ingredients';
 	drinkSection.appendChild(ingredientHeading);
