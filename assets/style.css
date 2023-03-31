@@ -2,7 +2,7 @@
     --body-copy:17px;
     --body-copy-line-height: calc(var(--body-copy)*1.2);
 
-    --main-heading: 25vw;
+    --main-heading: 20vw;
     --main-heading-line-height: calc(var(--main-heading));
 
     --nav-tab: 7vw;
@@ -46,11 +46,25 @@
 
 
 body{
-    margin: auto;
-    padding: auto;
+    margin: 0;
     width: 100%;
     font-family: 'tabularregular', serif;
 }
+
+/*IMAGE*/
+/*TITLE*/
+h2{
+    font-family: 'Array-Regular', sans-serif;
+    font-size: var(--main-heading);
+    line-height: var(--main-heading-line-height);
+    width: 90%;
+    margin: auto;
+    padding: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow-wrap: break-word;
+}
+/*INGREDIENTS & RECIPE*/
 
 /*SWAP + BUTTON*/
 .swap{

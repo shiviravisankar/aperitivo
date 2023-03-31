@@ -35,14 +35,14 @@ function getRandomCocktail(){
 function displayCocktail(cocktail){
 	const drinkSection = document.querySelector('#drink-section');
 	drinkSection.innerHTML = '';
-	
-	const drinkName = document.createElement('h2');
-	drinkName.innerHTML = cocktail.drinks[0].strDrink;
-	drinkSection.appendChild(drinkName);
 
 	const drinkImg = document.createElement('img');
 	drinkImg.src = cocktail.drinks[0].strDrinkThumb;
 	drinkSection.appendChild(drinkImg);
+
+	const drinkName = document.createElement('h2');
+	drinkName.innerHTML = cocktail.drinks[0].strDrink;
+	drinkSection.appendChild(drinkName);
 
 //DISPLAYING THE INGREDIENTS
 	const ingredientHeading = document.createElement('h3');
