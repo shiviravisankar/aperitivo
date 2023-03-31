@@ -2,7 +2,7 @@
     --body-copy:17px;
     --body-copy-line-height: calc(var(--body-copy)*1.2);
 
-    --main-heading: 20vw;
+    --main-heading: 15vw;
     --main-heading-line-height: calc(var(--main-heading)*0.9);
 
     --nav-tab: 7vw;
@@ -49,6 +49,7 @@ body{
     margin: 0;
     width: 100%;
     font-family: 'tabularregular', serif;
+    overflow-x: hidden;
 }
 
 /*IMAGE*/
@@ -57,7 +58,7 @@ img{
 }
 /*TITLE*/
 h2{
-    font-family: 'Array-Regular', sans-serif;
+    font-family: 'Array-Bold', sans-serif;
     font-size: var(--main-heading);
     line-height: var(--main-heading-line-height);
     width: 90%;
