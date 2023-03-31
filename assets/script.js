@@ -71,8 +71,12 @@ function displayCocktail(cocktail){
 //SWAPPING BACKGROUND COLOR
 function randomColor() {
     var color = '#';
-    var colorCode = ['E7408E','37C559','C0ED41','EE6C4D','A993DE', 'FF5964', '35A7FF']; // colors
-    var className = document.getElementsByClassName("change"); // class name to random color
+
+    //enter color hex codes
+    var colorCode = ['FF8B59','E7408E','A993DE','76C2ED','63F172', 'EC5151', 'E8EB4B'];
+
+    //this class should go in the body
+    var className = document.getElementsByClassName("change");
     var i;
     color += colorCode[Math.floor(Math.random() * colorCode.length)];
   for (var i = 0; i < className.length; i ++) {
