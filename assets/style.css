@@ -53,7 +53,7 @@ body{
 
 /*IMAGE*/
 img{
-    mix-blend-mode: hard-light;
+    mix-blend-mode: exclusion;
 }
 /*TITLE*/
 h2{
@@ -63,9 +63,11 @@ h2{
     width: 90%;
     margin: auto;
     padding: auto;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 30px;
     overflow-wrap: break-word;
+    padding-bottom: 20px;
+    border-bottom: 2px black dashed;
 }
 
 /*INGREDIENTS & RECIPE*/
