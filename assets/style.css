@@ -3,7 +3,7 @@
     --body-copy-line-height: calc(var(--body-copy)*1.2);
 
     --main-heading: 20vw;
-    --main-heading-line-height: calc(var(--main-heading));
+    --main-heading-line-height: calc(var(--main-heading)*0.9);
 
     --nav-tab: 7vw;
 }
@@ -53,7 +53,7 @@ body{
 
 /*IMAGE*/
 img{
-    mix-blend-mode: exclusion;
+    mix-blend-mode: hard-light;
 }
 /*TITLE*/
 h2{
@@ -63,7 +63,7 @@ h2{
     width: 90%;
     margin: auto;
     padding: auto;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 30px;
     overflow-wrap: break-word;
 }
@@ -94,7 +94,6 @@ h5{
 .swap{
     display: flex;
     flex-direction: row;
-    background-color: aqua;
 }
 
 /*REFRESH BUTTON*/
