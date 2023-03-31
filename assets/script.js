@@ -63,7 +63,7 @@ function displayCocktail(cocktail){
 		drinkSection.appendChild(ingredient);
 	}
 
-	const instructions = document.createElement('div');
+	const instructions = document.createElement('h5');
 	instructions.innerText = cocktail.drinks[0].strInstructions;
 	drinkSection.appendChild(instructions);
 }

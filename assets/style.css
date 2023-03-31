@@ -52,6 +52,9 @@ body{
 }
 
 /*IMAGE*/
+img{
+    mix-blend-mode: exclusion;
+}
 /*TITLE*/
 h2{
     font-family: 'Array-Regular', sans-serif;
@@ -64,12 +67,34 @@ h2{
     margin-bottom: 30px;
     overflow-wrap: break-word;
 }
+
 /*INGREDIENTS & RECIPE*/
+h3{
+    font-size: var(--body-copy);
+    font-family: 'tabularbold', sans-serif;
+    width: 90%;
+    margin: auto;
+    padding: auto;
+    margin-bottom: 10px;
+}
+
+h5{
+    font-size: var(--body-copy);
+    font-family: 'tabularbold', sans-serif;
+    width: 90%;
+    margin: auto;
+    padding: auto;
+    margin-top: 40px;
+    margin-bottom: 200px;
+    overflow-wrap: break-word;
+}
+
 
 /*SWAP + BUTTON*/
 .swap{
     display: flex;
     flex-direction: row;
+    background-color: aqua;
 }
 
 /*REFRESH BUTTON*/
