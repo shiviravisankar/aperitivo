@@ -1,3 +1,13 @@
+:root{
+    --body-copy:17px;
+    --body-copy-line-height: calc(var(--body-copy)*1.2);
+
+    --main-heading: 25vw;
+    --main-heading-line-height: calc(var(--main-heading));
+
+    --nav-tab: 7vw;
+}
+
 /*FONT*/
 @font-face {
     font-family: 'tabularbold';
@@ -83,11 +93,22 @@ body{
         display: flex;
         position: fixed;
         background-color: pink;
+        font-size: var(--nav-tab);
+        font-family: 'tabularbold', serif;
         bottom: 0;
-        height: 80px;
         justify-content: space-evenly;
         z-index: 9999;
         left: 0;
         right: 0;
-        padding-top: 30px;
+}
+
+.spirit{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    width: 50%;
+    height: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
