@@ -1,0 +1,93 @@
+/*FONT*/
+@font-face {
+    font-family: 'tabularbold';
+    src: url('../assets/fonts/tabular-bold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/tabular-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tabularregular';
+    src: url('../assets/fonts/tabular-regular-webfont.woff2') format('woff2')
+         url('../assets/fonts/tabular-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Array-Regular';
+    src: url('../assets/fonts/Array-Regular.woff2') format('woff2'),
+         url('../assets/fonts/Array-Regular.woff') format('woff');
+         font-weight: 400;
+         font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Array-Bold';
+    src: url('../assets/fonts/Array-Bold.woff2') format('woff2'),
+         url('../assets/fonts/Array-Bold.woff') format('woff');
+         font-weight: 700;
+         font-style: normal;
+  }
+
+
+
+body{
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    font-family: 'tabularregular', serif;
+}
+
+/*SWAP + BUTTON*/
+.swap{
+    display: flex;
+    flex-direction: row;
+}
+
+/*REFRESH BUTTON*/
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    margin: auto;
+    padding: auto;
+    width: 100vw;
+    height: 10vh;
+    margin-bottom: 50px;
+}
+
+.refresh{
+    display: flex;
+    display: flex;
+    border-radius: 100%;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.material-icons.md-48 { 
+    font-size: 48px;
+    color: white; 
+    padding: 15px;
+}
+
+/*BOTTOM NAVIGATION*/
+.navigation{
+    margin: 0;
+        padding: 0;
+        display: flex;
+        position: fixed;
+        background-color: pink;
+        bottom: 0;
+        height: 80px;
+        justify-content: space-evenly;
+        z-index: 9999;
+        left: 0;
+        right: 0;
+        padding-top: 30px;
+}
