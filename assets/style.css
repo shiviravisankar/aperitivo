@@ -1,5 +1,5 @@
 :root{
-    --body-copy:17px;
+    --body-copy:20px;
     --body-copy-line-height: calc(var(--body-copy)*1.2);
 
     --main-heading: 15vw;
