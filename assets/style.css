@@ -2,7 +2,7 @@
     --body-copy:20px;
     --body-copy-line-height: calc(var(--body-copy)*1.2);
 
-    --main-heading: 15vw;
+    --main-heading: 25vw;
     --main-heading-line-height: calc(var(--main-heading)*0.9);
 
     --nav-tab: 5vw;
@@ -43,6 +43,15 @@
          font-style: normal;
   }
 
+@font-face {
+    font-family: 'marlbororegular';
+    src: url('../assets/fonts/marlboro-webfont.woff2') format('woff2'),
+         url('../assets/fonts/marlboro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 
 body{
@@ -60,7 +69,7 @@ img{
 
 /*TITLE*/
 h2{
-    font-family: 'Array-Bold', sans-serif;
+    font-family: 'marlbororegular', sans-serif;
     font-size: var(--main-heading);
     line-height: var(--main-heading-line-height);
     width: 90%;
