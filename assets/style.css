@@ -116,7 +116,7 @@ h5{
     display: flex;
     border-radius: 100%;
     background-color: black;
-    border: 1px solid black;
+    opacity: 90%;
 }
 
 
@@ -126,7 +126,6 @@ h5{
         padding: 0;
         display: flex;
         position: fixed;
-        background-color: pink;
         font-size: var(--nav-tab);
         font-family: 'tabularbold', serif;
         bottom: 0;
