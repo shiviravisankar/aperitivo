@@ -10,43 +10,27 @@
 
 /*FONT*/
 @font-face {
-    font-family: 'tabularbold';
-    src: url('../assets/fonts/tabular-bold-webfont.woff2') format('woff2'),
-         url('../assets/fonts/tabular-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'tabularregular';
-    src: url('../assets/fonts/tabular-regular-webfont.woff2') format('woff2'),
-         url('../assets/fonts/tabular-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'Array-Regular';
-    src: url('../assets/fonts/Array-Regular.woff2') format('woff2'),
-         url('../assets/fonts/Array-Regular.woff') format('woff');
-         font-weight: 400;
-         font-style: normal;
-  }
-
-@font-face {
-    font-family: 'Array-Bold';
-    src: url('../assets/fonts/Array-Bold.woff2') format('woff2'),
-         url('../assets/fonts/Array-Bold.woff') format('woff');
-         font-weight: 700;
-         font-style: normal;
-  }
-
-@font-face {
     font-family: 'marlbororegular';
     src: url('../assets/fonts/marlboro-webfont.woff2') format('woff2'),
          url('../assets/fonts/marlboro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nk57_monospacecondensed_bold';
+    src: url('../assets/fonts/nk57-monospace-cd-bd-webfont.woff2') format('woff2'),
+         url('../assets/fonts/nk57-monospace-cd-bd-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nk57_monospaceexpanded_light';
+    src: url('../assets/fonts/nk57-monospace-ex-lt-webfont.woff2') format('woff2'),
+         url('../assets/fonts/nk57-monospace-ex-lt-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -85,7 +69,7 @@ h2{
 /*INGREDIENTS & RECIPE*/
 h3{
     font-size: var(--body-copy);
-    font-family: 'tabularbold', sans-serif;
+    font-family: 'nk57_monospacecondensed_bold', sans-serif;
     width: 90%;
     margin: auto;
     padding: auto;
@@ -94,7 +78,7 @@ h3{
 
 h5{
     font-size: var(--body-copy);
-    font-family: 'tabularbold', sans-serif;
+    font-family: 'nk57_monospacecondensed_bold', sans-serif;
     width: 90%;
     margin: auto;
     padding: auto;
