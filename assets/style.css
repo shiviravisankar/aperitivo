@@ -107,14 +107,13 @@ h3{
     bottom: 0;
     width: 23vw;
     z-index: 100;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .refresh{
     display: flex;
     border-radius: 100%;
     background-color: black;
-    opacity: 90%;
 }
 
 
