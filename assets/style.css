@@ -5,7 +5,7 @@
     --main-heading: 15vw;
     --main-heading-line-height: calc(var(--main-heading)*0.9);
 
-    --nav-tab: 7vw;
+    --nav-tab: 5vw;
 }
 
 /*FONT*/
@@ -56,6 +56,8 @@ body{
 img{
     mix-blend-mode: exclusion;
 }
+
+
 /*TITLE*/
 h2{
     font-family: 'Array-Bold', sans-serif;
@@ -97,35 +99,26 @@ h5{
 .swap{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 /*REFRESH BUTTON*/
 .button{
     display: flex;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     bottom: 0;
-    margin: auto;
-    padding: auto;
-    width: 100vw;
-    height: 10vh;
-    margin-bottom: 50px;
+    width: 23vw;
+    z-index: 100;
+    margin-bottom: 20px;
 }
 
 .refresh{
-    display: flex;
     display: flex;
     border-radius: 100%;
     background-color: black;
     border: 1px solid black;
 }
 
-.material-icons.md-48 { 
-    font-size: 48px;
-    color: white; 
-    padding: 15px;
-}
 
 /*BOTTOM NAVIGATION*/
 .navigation{
@@ -138,7 +131,7 @@ h5{
         font-family: 'tabularbold', serif;
         bottom: 0;
         justify-content: space-evenly;
-        z-index: 9999;
+        z-index: 99;
         left: 0;
         right: 0;
 }
