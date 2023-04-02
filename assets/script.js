@@ -40,12 +40,12 @@ function displayCocktail(cocktail){
 	drinkImg.src = cocktail.drinks[0].strDrinkThumb;
 	drinkSection.appendChild(drinkImg);
 
-	const drinkName = document.createElement('h2');
+	const drinkName = document.createElement('h1');
 	drinkName.innerHTML = cocktail.drinks[0].strDrink;
 	drinkSection.appendChild(drinkName);
 
 //DISPLAYING THE INGREDIENTS
-	const ingredientHeading = document.createElement('h3');
+	const ingredientHeading = document.createElement('h2');
 	ingredientHeading.innerText = 'Ingredients';
 	drinkSection.appendChild(ingredientHeading);
 	for(let i=1; i<16; i++){
@@ -58,12 +58,12 @@ function displayCocktail(cocktail){
 			measure = cocktail.drinks[0][`strMeasure${i}`] + ': ';
 		}
 
-		const ingredient = document.createElement('div');
+		const ingredient = document.createElement('h3');
 		ingredient.innerText = measure + cocktail.drinks[0][`strIngredient${i}`];
 		drinkSection.appendChild(ingredient);
 	}
 
-	const instructions = document.createElement('h5');
+	const instructions = document.createElement('h4');
 	instructions.innerText = cocktail.drinks[0].strInstructions;
 	drinkSection.appendChild(instructions);
 }
