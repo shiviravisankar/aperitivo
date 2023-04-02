@@ -144,3 +144,8 @@ h3{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+/*MEDIA QUERY FOR DESKTOP*/
+@media screen and (min-width: 500px ) {
+    
+}
