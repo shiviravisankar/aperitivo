@@ -33,21 +33,24 @@ function getRandomCocktail(){
 
 //DISPLAYING THE DRINK
 function displayCocktail(cocktail){
-	const drinkSection = document.querySelector('#drink-section');
-	drinkSection.innerHTML = '';
+	const imageSection = document.querySelector('#image-section'); // divide sections for desktop 
+	imageSection.innerHTML = '';
 
-	const drinkImg = document.createElement('img');
+  const contentSection = document.querySelector('#content-section');
+	contentSection.innerHTML = '';
+
+	const drinkImg = document.createElement('img'); // image 
 	drinkImg.src = cocktail.drinks[0].strDrinkThumb;
-	drinkSection.appendChild(drinkImg);
+	imageSection.appendChild(drinkImg);
 
-	const drinkName = document.createElement('h1');
+	const drinkName = document.createElement('h1'); // title
 	drinkName.innerHTML = cocktail.drinks[0].strDrink;
-	drinkSection.appendChild(drinkName);
+	contentSection.appendChild(drinkName);
 
 //DISPLAYING THE INGREDIENTS
-	const ingredientHeading = document.createElement('h2');
+	const ingredientHeading = document.createElement('h2'); // ingredient
 	ingredientHeading.innerText = 'Ingredients';
-	drinkSection.appendChild(ingredientHeading);
+	contentSection.appendChild(ingredientHeading);
 	for(let i=1; i<16; i++){
 		if(cocktail.drinks[0][`strIngredient${i}`] == null){
 			break;
@@ -58,14 +61,14 @@ function displayCocktail(cocktail){
 			measure = cocktail.drinks[0][`strMeasure${i}`] + ': ';
 		}
 
-		const ingredient = document.createElement('h3');
+		const ingredient = document.createElement('h3'); // list of ingredients
 		ingredient.innerText = measure + cocktail.drinks[0][`strIngredient${i}`];
-		drinkSection.appendChild(ingredient);
+		contentSection.appendChild(ingredient);
 	}
 
-	const instructions = document.createElement('h4');
+	const instructions = document.createElement('h4'); // recipe
 	instructions.innerText = cocktail.drinks[0].strInstructions;
-	drinkSection.appendChild(instructions);
+	contentSection.appendChild(instructions);
 }
 
 //SWAPPING BACKGROUND COLOR
