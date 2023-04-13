@@ -1,5 +1,5 @@
 :root{
-    --body-copy:20px;
+    --body-copy:17px;
     --body-copy-line-height: calc(var(--body-copy)*1.2);
 
     --main-heading: 25vw;
@@ -10,56 +10,33 @@
 
 /*FONT*/
 @font-face {
-    font-family: 'marlbororegular';
-    src: url('../assets/fonts/marlboro-webfont.woff2') format('woff2'),
-         url('../assets/fonts/marlboro-webfont.woff') format('woff');
+    font-family: 'cremonaregular';
+    src: url('../assets/fonts/cremona_regular_ttf-webfont.woff2') format('woff2'),
+         url('../assets/fonts/cremona_regular_ttf-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
-
-@font-face {
-    font-family: 'nk57_monospacecondensed_bold';
-    src: url('../assets/fonts/nk57-monospace-cd-bd-webfont.woff2') format('woff2'),
-         url('../assets/fonts/nk57-monospace-cd-bd-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'nk57_monospaceexpanded_light';
-    src: url('../assets/fonts/nk57-monospace-ex-lt-webfont.woff2') format('woff2'),
-         url('../assets/fonts/nk57-monospace-ex-lt-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
 
 body{
-    margin: 0;
-    width: 100%;
-    font-family: 'nk57_monospaceexpanded_light', serif;
+    width: 80%;
+    margin: auto;
+    padding: auto;
+    font-family: 'cremonaregular', serif;
     overflow-x: hidden;
 }
 
 /*IMAGE*/
 img{
-    mix-blend-mode: exclusion;
-    padding: 20px;
+    mix-blend-mode: multiply;
 }
 
 
 /*TITLE*/
 h1{
-    font-family: 'marlbororegular', sans-serif;
+    font-family: 'cremonaregular', sans-serif;
     font-size: var(--main-heading);
     line-height: var(--main-heading-line-height);
-    width: 90%;
-    margin: auto;
-    padding: auto;
     margin-top: 20px;
     margin-bottom: 30px;
     overflow-wrap: break-word;
@@ -70,19 +47,15 @@ h1{
 /*INGREDIENTS & RECIPE*/
 h2{
     font-size: var(--body-copy);
-    font-family: 'nk57_monospacecondensed_bold', sans-serif;
-    width: 90%;
-    margin: auto;
-    padding: auto;
+    font-family: 'cremonaregular', sans-serif;
     margin-bottom: 10px;
 }
 
 h4{
     font-size: var(--body-copy);
-    font-family: 'nk57_monospacecondensed_bold', sans-serif;
-    width: 90%;
-    margin: auto;
-    padding: auto;
+    font-family: 'cremonaregular', sans-serif;
+    font-weight: bold;
+    line-height: 20px;
     margin-top: 40px;
     margin-bottom: 200px;
     overflow-wrap: break-word;
