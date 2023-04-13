@@ -26,6 +26,13 @@ body{
     overflow-x: hidden;
 }
 
+/*FLEXBOX*/
+.desktop{
+    display: flex;
+    flex-direction: column;
+}
+
+
 /*IMAGE*/
 img{
     mix-blend-mode: difference;
@@ -119,5 +126,9 @@ h3 {
 
 /*MEDIA QUERY FOR DESKTOP*/
 @media screen and (min-width: 500px ) {
+    
+    .desktop{
+        flex-direction: row;
+    }
     
 }
