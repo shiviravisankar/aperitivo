@@ -1,9 +1,11 @@
-:root{
-    --body-copy:17px;
-    --body-copy-line-height: calc(var(--body-copy)*1.2);
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,700&display=swap');
 
-    --main-heading: 25vw;
-    --main-heading-line-height: calc(var(--main-heading)*0.9);
+:root{
+    --body-copy:20px;
+    --body-copy-line-height: calc(var(--body-copy)*1.5);
+
+    --main-heading: 16vw;
+    --main-heading-line-height: calc(var(--main-heading)*0.8);
 
     --nav-tab: 8vw;
 }
@@ -19,52 +21,49 @@
 }
 
 body{
-    width: 80%;
-    margin: auto;
-    padding: auto;
+    margin: 0;
     font-family: 'cremonaregular', serif;
     overflow-x: hidden;
 }
 
 /*IMAGE*/
 img{
-    mix-blend-mode: multiply;
+    mix-blend-mode: difference;
 }
 
 
 /*TITLE*/
-h1{
+h1 {
     font-family: 'cremonaregular', sans-serif;
     font-size: var(--main-heading);
     line-height: var(--main-heading-line-height);
     margin-top: 20px;
     margin-bottom: 30px;
     overflow-wrap: break-word;
+    display: table-caption;
     padding-bottom: 20px;
-    border-bottom: 2px black dashed;
 }
 
 /*INGREDIENTS & RECIPE*/
-h2{
+h2 {
+    font-family: 'Lora', sans-serif;
+    font-weight: bold;
     font-size: var(--body-copy);
-    font-family: 'cremonaregular', sans-serif;
-    margin-bottom: 10px;
+    line-height: var(--body-copy-line-height);
+    margin-bottom: 5px;
 }
 
-h4{
+h4 {
     font-size: var(--body-copy);
-    font-family: 'cremonaregular', sans-serif;
-    font-weight: bold;
-    line-height: 20px;
+    line-height: var(--body-copy-line-height);
+    font-family: 'Lora', sans-serif;
     margin-top: 40px;
     margin-bottom: 200px;
     overflow-wrap: break-word;
 }
 
-h3{
-    width: 90%;
-    margin: auto;
-    padding: auto;
+h3 {
+    font-family: 'Lora', sans-serif;
 }
 
 /*SWAP + BUTTON*/
@@ -99,10 +98,9 @@ h3{
         flex-direction: row;
         position: fixed;
         font-size: var(--nav-tab);
-        font-family: 'marlbororegular', serif;
+        font-family: 'cremonaregular', serif;
         bottom: 0;
         justify-content: space-around;
-        letter-spacing: 0.3em;
         z-index: 99;
         left: 0;
         right: 0;
