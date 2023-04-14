@@ -38,6 +38,7 @@ body{
     margin: auto;
     padding: auto;
     margin-top: 30px;
+    font-family: 'Lora', sans-serif;
 }
 
 
@@ -60,7 +61,6 @@ h1 {
 
 /*INGREDIENTS & RECIPE*/
 h2 {
-    font-family: 'Lora', sans-serif;
     font-weight: bold;
     font-size: var(--body-copy);
     line-height: var(--body-copy-line-height);
@@ -72,14 +72,9 @@ h2 {
 h4 {
     font-size: var(--body-copy);
     line-height: var(--body-copy-line-height);
-    font-family: 'Lora', sans-serif;
     margin-top: 40px;
     margin-bottom: 200px;
     overflow-wrap: break-word;
-}
-
-h3 {
-    font-family: 'Lora', sans-serif;
 }
 
 /*SWAP + BUTTON*/
