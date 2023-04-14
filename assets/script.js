@@ -71,27 +71,36 @@ function displayCocktail(cocktail){
 	contentSection.appendChild(instructions);
 }
 
-//SWAPPING BACKGROUND COLOR
-function randomColor() {
-    var color = '#';
+//REFRESH BUTTON
+  var refreshBtn = document.getElementById('refresh-button');
+  refreshBtn.addEventListener('click', function() {
+    location.reload();
+  });
 
+  //SWAPPING BACKGROUND COLOR
+  
+  function randomColor() {
+    var color = '#';
+  
     //enter color hex codes
     var colorCode = ['FF8B59','E7408E','A993DE','76C2ED','63F172', 'EC5151', 'E8EB4B'];
-
+  
     //set background color of body
     var className = document.getElementsByClassName("change");
     var i;
     color += colorCode[Math.floor(Math.random() * colorCode.length)];
-  for (var i = 0; i < className.length; i ++) {
-      className[i].style.backgroundColor = color;}
-
+    for (var i = 0; i < className.length; i ++) {
+      className[i].style.backgroundColor = color;
+  
+      // set fill color of path elements to match background
+      var pathElements = className[i].getElementsByTagName("path");
+      for (var j = 0; j < pathElements.length; j++) {
+        pathElements[j].style.fill = color;
+      }
+    }
+  
     // set background color of navigation bar
     var navbar = document.getElementById("nav");
     navbar.style.backgroundColor = color;
-
-}
-
-
-
-// SPLITSCROLL FOR OVERFLOWING TEXT
+  }
 
