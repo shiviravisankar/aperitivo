@@ -85,19 +85,12 @@ h4 {
 }
 
 /*REFRESH BUTTON*/
-.button{
+button{
     display: flex;
     position: fixed;
     bottom: 0;
-    width: 17vw;
     z-index: 100;
     margin-bottom: 30px;
-}
-
-.refresh{
-    display: flex;
-    border-radius: 100%;
-    background-color: black;
 }
 
 

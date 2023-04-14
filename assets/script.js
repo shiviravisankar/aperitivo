@@ -83,11 +83,12 @@ function randomColor() {
     var i;
     color += colorCode[Math.floor(Math.random() * colorCode.length)];
   for (var i = 0; i < className.length; i ++) {
-      className[i].style.backgroundColor = color; }
+      className[i].style.backgroundColor = color;}
 
     // set background color of navigation bar
     var navbar = document.getElementById("nav");
     navbar.style.backgroundColor = color;
+
 }
 
 
