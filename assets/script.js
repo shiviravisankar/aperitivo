@@ -98,3 +98,7 @@ function displayCocktail(cocktail){
     navbar.style.backgroundColor = color;
   }
 
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
