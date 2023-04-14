@@ -85,3 +85,27 @@ function randomColor() {
   for (var i = 0; i < className.length; i ++) {
       className[i].style.backgroundColor = color; }
 }
+
+// SPLITSCROLL FOR OVERFLOWING TEXT
+
+function splitScroll(){
+  const controller = new ScrollMagic.Controller();
+
+  new ScrollMagic.Scene({
+    duration: "100%",
+    triggerElement: '#image-section',
+    triggerHook: 0
+  })
+  .setPin('#image-section')
+  .addTo(controller);
+
+  new ScrollMagic.Scene({
+    duration: "100%",
+    triggerElement: '#content-section',
+    triggerHook: 0
+  })
+  .setPin('#content-section')
+  .addTo(controller);
+}
+
+splitScroll();
