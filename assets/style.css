@@ -152,7 +152,7 @@ h3 {
 
     #image-section{
         display: flex;
-        width: 60%;
+        width: 55%;
     }
 
     img{
@@ -164,7 +164,7 @@ h3 {
 
     #content-section{
         display: block;
-        width: 40%;
+        width: 45%;
         justify-content: center;
         padding-left: 100px;
         margin-top: 70px;

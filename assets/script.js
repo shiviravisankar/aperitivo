@@ -88,24 +88,3 @@ function randomColor() {
 
 // SPLITSCROLL FOR OVERFLOWING TEXT
 
-function splitScroll(){
-  const controller = new ScrollMagic.Controller();
-
-  new ScrollMagic.Scene({
-    duration: "100%",
-    triggerElement: '#image-section',
-    triggerHook: 0
-  })
-  .setPin('#image-section')
-  .addTo(controller);
-
-  new ScrollMagic.Scene({
-    duration: "100%",
-    triggerElement: '#content-section',
-    triggerHook: 0
-  })
-  .setPin('#content-section')
-  .addTo(controller);
-}
-
-splitScroll();
