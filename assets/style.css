@@ -4,7 +4,7 @@
     --body-copy:20px;
     --body-copy-line-height: calc(var(--body-copy)*1.5);
 
-    --main-heading: 16vw;
+    --main-heading: 12vw;
     --main-heading-line-height: calc(var(--main-heading)*0.8);
 
     --nav-tab: 8vw;
@@ -30,6 +30,14 @@ body{
 .desktop{
     display: flex;
     flex-direction: column;
+}
+
+/*CONTENT WIDTH*/
+#content-section{
+    width: 80%;
+    margin: auto;
+    padding: auto;
+    margin-top: 30px;
 }
 
 
