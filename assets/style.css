@@ -56,7 +56,6 @@ h1 {
     margin-bottom: 30px;
     overflow-wrap: break-word;
     display: table-caption;
-    padding-bottom: 20px;
 }
 
 /*INGREDIENTS & RECIPE*/
@@ -66,6 +65,8 @@ h2 {
     font-size: var(--body-copy);
     line-height: var(--body-copy-line-height);
     margin-bottom: 5px;
+    border-top: 2px dashed black;
+    padding-top: 30px;
 }
 
 h4 {
