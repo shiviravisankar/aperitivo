@@ -142,7 +142,6 @@ h4 {
     
     .desktop{
         flex-direction: row;
-        width: 90%;
     }
 
     #image-section{
@@ -157,16 +156,29 @@ h4 {
         object-fit: cover;
     }
 
+    img:hover{
+        mix-blend-mode: normal;
+    }
+
     #content-section{
         display: block;
         width: 45%;
         justify-content: center;
-        padding-left: 100px;
+        padding-left: 130px;
         margin-top: 70px;
+        margin-right: 10vw;
     }
 
     h1{
         font-size: var(--main-heading);
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .button{
+        display: none;
     }
     
 }
