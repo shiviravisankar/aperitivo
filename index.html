@@ -9,15 +9,28 @@
         <link href="assets/style.css" rel="stylesheet">
         <script defer src="assets/script.js"></script>
 
-    <!-- ICONS FOR MEDIA -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
     <title>Functions</title>
 </head>
 
 <body class="change" onload="return randomColor()">
     
-    <div class="desktop">
-        <section id="image-section"></section>
-        <section id="content-section"></section>
+    <div class="swap">
+        <div class="desktop">
+            <section id="image-section"></section>
+            <section id="content-section"></section>
+        </div>
+
+
+        <!-- REFRESH BUTTON -->
+        <div class="button">
+            <button type="button" class="refresh" id="refresh-button">
+                <img src="assets/shake.svg">
+            </button>
+        </div>
     </div>
+
+    <!-- BOTTOM NAVIGATION -->
+    <nav class="navigation" id="nav">
+        <h5 class="spirit">Gin &#x25B2;</h5>
+        <h5 class="spirit">Search &#x1F50D;</h5>
+    </nav> 
