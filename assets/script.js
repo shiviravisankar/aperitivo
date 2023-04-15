@@ -77,28 +77,27 @@ function displayCocktail(cocktail){
     location.reload();
   });
 
-  //SWAPPING BACKGROUND COLOR
-  
+
+//SWAPPING BACKGROUND COLOR
   function randomColor() {
     var color = '#';
   
     //enter color hex codes
     var colorCode = ['FF8B59','E7408E','A993DE','76C2ED','63F172', 'EC5151', 'E8EB4B'];
   
-    //set background color of body
+    //body color
     var className = document.getElementsByClassName("change");
     var i;
     color += colorCode[Math.floor(Math.random() * colorCode.length)];
     for (var i = 0; i < className.length; i ++) {
       className[i].style.backgroundColor = color;
     }
+    
+    // SVG color
+    var svgElements = document.querySelectorAll("svg path.round");
+    for (var i = 0; i < svgElements.length; i++) {
+        svgElements[i].style.fill = color;
+    }
+}
   
-    // set background color of navigation bar
-    var navbar = document.getElementById("nav");
-    navbar.style.backgroundColor = color;
-  }
-
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
 
