@@ -93,8 +93,8 @@ button{
     z-index: 999;
     background-color: black;
     border-radius: 50%;
-    width: 20%;
-    height: 12%;
+    width: 4.5rem;
+    height: 4.5rem;
 }
 
 .icon{
@@ -148,15 +148,15 @@ button{
         font-size: var(--main-heading);
     }
 
-    button{
-        position: absolute;
-        width: 11%;
-        height: 16%;
-        margin-bottom: 45vh;
-    }
-
     svg{
         height: 85px;
     }
 
+    button{
+        width: 7rem;
+        height: 7rem;
+        margin-bottom: 50vh;
+    }
+
 }
+
