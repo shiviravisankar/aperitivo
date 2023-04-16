@@ -67,7 +67,7 @@ function displayCocktail(cocktail){
 	}
 
 	const instructions = document.createElement('h4'); // recipe
-	instructions.innerText = cocktail.drinks[0].strInstructions;
+	instructions.innerText = 'Recipe\n' + cocktail.drinks[0].strInstructions;
 	contentSection.appendChild(instructions);
 }
 

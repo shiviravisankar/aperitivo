@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,700&display=swap');
-
 :root{
-    --body-copy:20px;
+    --body-copy:17px;
     --body-copy-line-height: calc(var(--body-copy)*1.5);
 
     --main-heading: 12vw;
@@ -15,6 +13,23 @@
     font-family: 'cremonaregular';
     src: url('../assets/fonts/cremona_regular_ttf-webfont.woff2') format('woff2'),
          url('../assets/fonts/cremona_regular_ttf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pp_neue_montrealbook';
+    src: url('../assets/fonts/ppneuemontreal-book-webfont.woff2') format('woff2'),
+         url('../assets/fonts/ppneuemontreal-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pp_neue_montrealmedium';
+    src: url('../assets/fonts/ppneuemontreal-medium-webfont.woff2') format('woff2'),
+         url('../assets/fonts/ppneuemontreal-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -38,7 +53,7 @@ body{
     margin: auto;
     padding: auto;
     margin-top: 30px;
-    font-family: 'Lora', sans-serif;
+    font-family: 'pp_neue_montrealbook', serif;
 }
 
 /* DROPDOWN */
@@ -97,17 +112,16 @@ h1 {
 
 /*INGREDIENTS & RECIPE*/
 h2 {
-    font-weight: bold;
+    font-family: 'pp_neue_montrealbook', serif;
     font-size: var(--body-copy);
     line-height: var(--body-copy-line-height);
-    margin-bottom: 5px;
     border-top: 2px dashed black;
     padding-top: 30px;
 }
 
 h4 {
     font-size: var(--body-copy);
-    line-height: var(--body-copy-line-height);
+    line-height: calc(var(--body-copy-line-height)*0.8);
     margin-top: 40px;
     margin-bottom: 200px;
     overflow-wrap: break-word;
