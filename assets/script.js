@@ -104,4 +104,21 @@ function displayCocktail(cocktail){
      navbar.style.backgroundColor = color;
  }
 
+ //Text & SVG scroll on image
+ window.onscroll = function() {
+  var spirit = document.querySelector('.spirit');
+  var image = document.querySelector('#image-section');
+  var rect = spirit.getBoundingClientRect();
+  var imageRect = image.getBoundingClientRect();
+  var svg = spirit.querySelector('svg');
+  
+  if (rect.bottom > imageRect.top && rect.top < imageRect.bottom) {
+    spirit.classList.add('textcolor');
+    svg.classList.add('ikon');
+  } else {
+    spirit.classList.remove('textcolor');
+    svg.classList.remove('ikon');
+  }
+}
+
 

@@ -85,6 +85,14 @@ img{
     mix-blend-mode: difference;
 }
 
+.textcolor {
+    color: white;
+  }
+
+  .ikon path{
+    fill: white;
+  }
+
 
 /*TITLE*/
 h1 {
