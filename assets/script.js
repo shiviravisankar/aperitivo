@@ -98,5 +98,10 @@ function displayCocktail(cocktail){
     for (var i = 0; i < svgElements.length; i++) {
         svgElements[i].style.fill = color;
     }
-}
+
+     // set background color of navigation bar for desktop
+     var navbar = document.getElementById("desktop");
+     navbar.style.backgroundColor = color;
+ }
+
 

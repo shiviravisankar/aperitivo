@@ -6,6 +6,8 @@
     --main-heading-line-height: calc(var(--main-heading)*0.8);
 
     --nav-tab: 5vw;
+
+    --desktop: 30px;
 }
 
 /*FONT*/
@@ -47,7 +49,7 @@ body{
     font-family: 'epilogueregular', serif;
 }
 
-/*TOP NAV*/
+/*MOBILE TOP NAV*/
 
 .spirit {
     display: flex;
@@ -73,6 +75,10 @@ body{
     margin-left: 40vw;
 }
 
+/*DESKTOP BOTTOM NAV*/
+.desktop{
+    display: none;
+}
 
 /*IMAGE*/
 img{
@@ -206,6 +212,23 @@ h4 {
 
     .icon:hover{
         animation: none;
+    }
+
+    .desktop{
+        background-color: beige;
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        bottom: 0;
+        z-index: 99;
+        width: 100vw;
+        padding-left: 100px;
+    }
+
+    .liquid{
+        padding-top: 3vh;
+        padding-bottom: 2vh;
+        font-size: var(--desktop);
     }
 
 }
