@@ -7,7 +7,7 @@
 
     --nav-tab: 5vw;
 
-    --desktop: 30px;
+    --desktop: 20px;
 }
 
 /*FONT*/
@@ -117,8 +117,15 @@ h4 {
 /*SWAP + BUTTON*/
 .swap{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+}
+
+.layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*REFRESH BUTTON*/
@@ -163,7 +170,7 @@ h4 {
         overflow: hidden;
     }
     
-    .desktop{
+    .swap{
         flex-direction: row;
     }
 
@@ -217,6 +224,7 @@ h4 {
     .desktop{
         background-color: beige;
         display: flex;
+        flex-direction: row;
         position: fixed;
         justify-content: space-between;
         bottom: 0;
