@@ -2,7 +2,6 @@ console.info('cocktails.js filtered?');
 
 document.addEventListener('DOMContentLoaded', function() {
   const tabItems = document.querySelectorAll('.tab-item');
-  const toolbarTitle = document.querySelector('ons-toolbar .center');
 
   tabItems.forEach(function(tabItem) {
     tabItem.addEventListener('click', function() {
@@ -14,21 +13,21 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //FETCHING THE API
-function getRandomCocktail(){
-	fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
-  .then(function(response) {
+function getRandomCocktail() {
+  fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Gin')
+    .then(function(response) {
       if (response.status !== 200) {
         console.log('Looks like there was a problem. Status Code: ' + response.status);
         return;
       }
       response.json().then(function(data) {
-        displayCocktail(data);
+        const randomCocktail = data.drinks[Math.floor(Math.random() * data.drinks.length)];
+        displayCocktail(randomCocktail);
       });
-    }
-  )
-  .catch(function(err) {
-    console.log('Fetch Error :-S', err);
-  });
+    })
+    .catch(function(err) {
+      console.log('Fetch Error :-S', err);
+    });
 }
 
 //DISPLAYING THE DRINK
@@ -40,36 +39,36 @@ function displayCocktail(cocktail){
 	contentSection.innerHTML = '';
 
 	const drinkImg = document.createElement('img'); // image 
-	drinkImg.src = cocktail.drinks[0].strDrinkThumb;
+	drinkImg.src = cocktail.strDrinkThumb;
 	imageSection.appendChild(drinkImg);
 
 	const drinkName = document.createElement('h1'); // title
-	drinkName.innerHTML = cocktail.drinks[0].strDrink;
+	drinkName.innerHTML = cocktail.strDrink;
 	contentSection.appendChild(drinkName);
 
 //DISPLAYING THE INGREDIENTS
-	const ingredientHeading = document.createElement('h2'); // ingredient
-	ingredientHeading.innerText = 'Ingredients';
-	contentSection.appendChild(ingredientHeading);
-	for(let i=1; i<16; i++){
-		if(cocktail.drinks[0][`strIngredient${i}`] == null){
-			break;
-		}
+  const ingredientHeading = document.createElement('h2'); // ingredient
+  ingredientHeading.innerText = 'Ingredients';
+  contentSection.appendChild(ingredientHeading);
+  for(let i=1; i<16; i++){
+    if(cocktail[`strIngredient${i}`] == null){
+      break;
+    }
 
-		let measure = '';
-		if(cocktail.drinks[0][`strMeasure${i}`] != null){
-			measure = cocktail.drinks[0][`strMeasure${i}`] + ': ';
-		}
+    let measure = '';
+    if(cocktail[`strMeasure${i}`] != null){
+      measure = cocktail[`strMeasure${i}`] + ': ';
+    }
 
-		const ingredient = document.createElement('h3'); // list of ingredients
-		ingredient.innerText = measure + cocktail.drinks[0][`strIngredient${i}`];
-		contentSection.appendChild(ingredient);
-	}
+    const ingredient = document.createElement('h3'); // list of ingredients
+    ingredient.innerText = measure + cocktail[`strIngredient${i}`];
+    contentSection.appendChild(ingredient);
+  }
 
-	const instructions = document.createElement('h4'); // recipe
-	instructions.innerText = 'RECIPE\n' + cocktail.drinks[0].strInstructions;
-	contentSection.appendChild(instructions);
-}
+  const instructions = document.createElement('h4'); // recipe
+  instructions.innerText = 'RECIPE\n' + cocktail.strInstructions;
+  contentSection.appendChild(instructions);
+  }
 
 //REFRESH BUTTON
   var refreshBtn = document.getElementById('refresh-button');
