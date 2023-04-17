@@ -230,20 +230,18 @@ h4 {
     }
 
     .desktop{
-        background-color: beige;
         display: flex;
         flex-direction: row;
         position: fixed;
-        justify-content: space-between;
+        justify-content: space-evenly;
         bottom: 0;
-        z-index: 99;
-        width: 100vw;
-        padding-left: 100px;
+        width: 45vw;
+        margin-left: 55vw;
     }
 
     .liquid{
         padding-top: 3vh;
-        padding-bottom: 2vh;
+        padding-bottom: 3vh;
         font-size: var(--desktop);
     }
 
