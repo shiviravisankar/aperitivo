@@ -147,6 +147,7 @@ h4 {
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
+    cursor: pointer;
 }
 
 .icon{
