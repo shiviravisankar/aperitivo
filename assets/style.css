@@ -145,8 +145,8 @@ h4 {
     z-index: 999;
     background-color: black;
     border-radius: 50%;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .icon{
@@ -216,8 +216,8 @@ h4 {
     }
 
     #refresh-button{
-        width: 7rem;
-        height: 7rem;
+        width: 6rem;
+        height: 6rem;
         margin-bottom: 50vh;
     }
 
