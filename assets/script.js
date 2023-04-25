@@ -124,6 +124,8 @@ function filter() {
     // set background color of navigation bar for desktop
     var navbar = document.getElementById("desktop");
     navbar.style.backgroundColor = color;
+
+    // change favicon color
  }
 
  //Text & SVG scroll on image
