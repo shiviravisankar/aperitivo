@@ -1,29 +1,43 @@
-.searchbar{
-    display: flex;
-    flex-direction: row;
+body{
     width: 80vw;
-    justify-content: center;
-    align-items: center;
     margin: auto;
     padding: auto;
-    margin-top: 30px;
 }
 
-#textsearch{
+.searchbar{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchtext{
     background-color: transparent;
     width: 70vw;
-    border: 1px solid black;
+    border: 0.5px solid black;
     height: 5vh;
     border-radius: 5px;
     padding-left: 10px;
-    font-family: 'epilogueregular', serif;
-    font-size: calc(var(--body-copy)/1.5);
+    font-size: calc(var(--body-copy)/1.3);
 }
 
 #searchbutton{
     background-color: transparent;
-    width: 10vw;
-    height: 6vh;
     border: none;
-    margin-left: 10px;
+    margin-left: 15px;
+}
+
+#filtereddrinks{
+    margin-bottom: 150px;
+}
+
+.alcohol img {
+width: 80vw;
+mix-blend-mode: multiply;
+margin-top: 30px;
+border-radius: 5px;
+}
+
+.alcohol p{
+margin-top: 10px;
 }
