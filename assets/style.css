@@ -81,7 +81,7 @@ body{
 }
 
 /*IMAGE*/
-img{
+#image-section{
     mix-blend-mode: difference;
 }
 

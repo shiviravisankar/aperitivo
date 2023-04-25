@@ -89,6 +89,17 @@ function displayCocktail(cocktail){
   });
 
 
+//IMAGE MIX BLEND MODE
+function filter() {
+  var img = document.getElementById('image-section');
+
+  if (img.style.mixBlendMode === 'difference') {
+    img.style.mixBlendMode = 'normal';
+  } else {
+    img.style.mixBlendMode = 'difference';
+  }
+}
+
 //SWAPPING BACKGROUND COLOR
   function randomColor() {
     var color = '#';
