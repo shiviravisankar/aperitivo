@@ -195,7 +195,7 @@ h4 {
         object-fit: cover;
     }
 
-    img:hover{
+    #image-section:hover{
         mix-blend-mode: normal;
     }
 
