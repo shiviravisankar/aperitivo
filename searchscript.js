@@ -23,7 +23,6 @@ searchButton.addEventListener('click', function() {
         const cocktailName = document.createElement('p');
         cocktailName.textContent = drink.strDrink;
         cocktailDiv.appendChild(cocktailName);
-
         cocktailList.appendChild(cocktailDiv);
       });
     })

@@ -89,7 +89,7 @@ function displayCocktail(cocktail){
   });
 
 
-//IMAGE MIX BLEND MODE
+//IMAGE MIX BLEND MODE TOGGLE
 function filter() {
   var img = document.getElementById('image-section');
 
