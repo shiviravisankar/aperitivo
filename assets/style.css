@@ -2,8 +2,8 @@
     --body-copy:17px;
     --body-copy-line-height: calc(var(--body-copy)*1.5);
 
-    --main-heading: 12vw;
-    --main-heading-line-height: calc(var(--main-heading)*0.8);
+    --main-heading: 18vw;
+    --main-heading-line-height: calc(var(--main-heading)*0.9);
 
     --nav-tab: 5vw;
 
@@ -12,25 +12,26 @@
 
 /*FONT*/
 @font-face {
-    font-family: 'cremonaregular';
-    src: url('../assets/fonts/cremona_regular_ttf-webfont.woff2') format('woff2'),
-         url('../assets/fonts/cremona_regular_ttf-webfont.woff') format('woff');
+    font-family: 'scalterserif__condensed';
+    src: url('../assets/fonts/scalter-serifcondensed-webfont.woff2') format('woff2'),
+         url('../assets/fonts/scalter-serifcondensed-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'epilogueregular';
-    src: url('../assets/fonts/epilogue-variablefont_wght-webfont.woff2') format('woff2'),
-         url('../assets/fonts/epilogue-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Josefin Sans';
+    src: url('../assets/fonts/JosefinSans-SemiBold.woff2') format('woff2'),
+        url('../assets/fonts/JosefinSans-SemiBold.woff') format('woff');
+    font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 
 
 body{
     margin: 0;
-    font-family: 'cremonaregular', serif;
+    font-family: 'Josefin Sans';
     overflow-x: hidden;
 }
 
@@ -46,7 +47,7 @@ body{
     margin: auto;
     padding: auto;
     margin-top: 30px;
-    font-family: 'epilogueregular', serif;
+    font-family: 'Josefin Sans';
 }
 
 /*MOBILE TOP NAV*/
@@ -92,13 +93,13 @@ body{
 
 /*TITLE*/
 h1 {
-    font-family: 'cremonaregular', sans-serif;
+    font-family: 'scalterserif__condensed';
     font-size: var(--main-heading);
     line-height: var(--main-heading-line-height);
-    margin-top: 20px;
-    margin-bottom: 30px;
     overflow-wrap: break-word;
-    display: table-caption;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
 }
 
 /*INGREDIENTS & RECIPE*/
