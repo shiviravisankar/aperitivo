@@ -76,6 +76,8 @@ body
     padding-top: 5%;
     padding-bottom: 5%;
     margin-left: 10vw;
+    font-weight: 600;
+    text-transform: uppercase;
   }
 
 .liquid
