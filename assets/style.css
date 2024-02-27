@@ -249,15 +249,15 @@ p
 
     h2, h4
     {
-            font-size: calc(var(--body-copy)*1.2);
+            font-size: calc(var(--body-copy)*1.3);
             line-height: calc(var(--body-copy-line-height)*1.1);
             font-weight: 600;
     }
 
     h3, p
     {
-            font-size: calc(var(--body-copy)*1.1);
-            line-height: calc(var(--body-copy-line-height)/1.1);
+            font-size: calc(var(--body-copy)*1.3);
+            line-height: calc(var(--body-copy-line-height)*1.1);
             font-weight: 500;
     }
 
