@@ -302,8 +302,10 @@ p
     {
         padding-top: 3vh;
         padding-bottom: 3vh;
-        font-size: var(--desktop-nav-copy);
-        line-height: var(--desktop-nav-copy-line-height);
+        font-size: calc(var(--nav-tab)/3.5);
+        line-height: calc(var(--nav-tab)/2.5);
+        text-transform: uppercase;
+        font-weight: 600;
     }
 
 }
